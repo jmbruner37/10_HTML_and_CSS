@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <!-- Required meta tags -->
@@ -7,12 +7,87 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="../assets/styles.css">
-
-    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Latitude Dashboard</title>
   </head>
   <body>
-    <h1>Hello, world!</h1>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="landing.html">Latitude Analysis</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="data.html">Data <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="comparisons.html">Comparisons</a>
+          </li>
+          <li class="nav-item dropdown active">
+            <a class="nav-link dropdown-toggle" href="comparisons.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Latitude Plots
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="maxtemp.html">Max Temperature</a>
+              <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+              <a class="dropdown-item" href="windspeed.html">Wind Speed</a>
+              <a class="dropdown-item" href="humidity.html">Humidity</a>
+            </div>
+          </li>
+        
+        </ul>
+        
+      </div>
+    </nav>
+
+
+    <div class="container content">    
+      <div class="row">
+          <div class="col-md-8">
+              <div class="col-md-12">
+                  <h3>Latitude vs. Cloudiness </h3>
+                  <hr>
+                  <div class="thumbnail">
+                      <img class="img-thumbnail float-left" src="assets/images/Fig3.png " width="50%" alt="temperature">
+                  </div>
+                  
+                  <p>This plot doesn't necessarily show any trend between latitude and cloudiness. We can't say cloudiness increase or decrease when latitude get closer to the equator. Clouds tend to form in abundance in the middle latitudes 60 degrees north and south of the equator. This is where the edges of polar and mid latitude circulation cells collide and push air upward. </p>
+                </div>
+          </div>
+          <!--visualization adjustments-->
+          <div class="col-md-4">
+              <div class="col-md-12">
+                  <h3>Visualizations</h3>
+                  <hr>
+                  <div class="row">
+                      <div class="col-3 col-md-6">
+                          <a href="temp.html"><img src="assets/images/Fig1.png" width="100%"  alt="temperature">
+                          </a> 
+                      </div>
+                      <div class="col-3 col-md-6">
+                          <a href="humidity.html"><img src="assets/images/Fig2.png" width="100%" alt="humidity"></a>
+                      </div>
+                 
+                      <div class="col-3 col-md-6">
+                          <a href="cloudiness.html"><img src="assets/images/Fig3.png" width="100%"  alt="cloudiness"></a>
+                      </div>
+
+                      <div class="col-3 col-md-6">
+                          <a href="windspeed.html"><img src="assets/images/Fig4.png"width="100%"  alt="wind speed"></a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+
+
+
+
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
